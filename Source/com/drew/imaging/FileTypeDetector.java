@@ -81,6 +81,7 @@ public class FileTypeDetector
         _root.addPath(FileType.Rw2, "II".getBytes(), new byte[]{0x55, 0x00});
         _root.addPath(FileType.Eps, "%!PS".getBytes());
         _root.addPath(FileType.Eps, new byte[]{(byte)0xC5, (byte)0xD0, (byte)0xD3, (byte)0xC6});
+        _root.addPath(FileType.Amr, new byte[]{0x23, 0x21, 0x41, 0x4d, 0x52, 0x2d, 0x57, 0x42, 0x0a});
 
         // Only file detection
         _root.addPath(FileType.Aac, new byte[]{(byte)0xFF, (byte)0xF1});

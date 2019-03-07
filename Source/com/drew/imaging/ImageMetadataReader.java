@@ -20,6 +20,7 @@
  */
 package com.drew.imaging;
 
+import com.drew.imaging.amr.AmrMetadataReader;
 import com.drew.imaging.avi.AviMetadataReader;
 import com.drew.imaging.bmp.BmpMetadataReader;
 import com.drew.imaging.eps.EpsMetadataReader;
@@ -181,6 +182,8 @@ public class ImageMetadataReader
                 return EpsMetadataReader.readMetadata(inputStream);
             case Heif:
                 return HeifMetadataReader.readMetadata(inputStream);
+            case Amr:
+                return AmrMetadataReader.readMetadata(inputStream);
             case Unknown:
                 throw new ImageProcessingException("File format could not be determined");
             default:
