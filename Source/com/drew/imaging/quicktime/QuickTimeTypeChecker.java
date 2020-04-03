@@ -101,6 +101,11 @@ public class QuickTimeTypeChecker implements TypeChecker
         if (t != null)
             return t;
 
+        if (eightCC.startsWith("ftyp")) {
+            // try with mp4
+            return FileType.Mp4;
+        }
+
         return FileType.Unknown;
     }
 }
