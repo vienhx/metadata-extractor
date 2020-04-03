@@ -43,7 +43,6 @@ public class QuickTimeTypeChecker implements TypeChecker
         _ftypMap.put("ftypqt  ", FileType.Mov);
         // hotit add more
         _ftypMap.put("ftyp3gp5", FileType.Mov);
-        _ftypMap.put("ftyp3gp4", FileType.Mov);
         // hotit
 
         // MP4
@@ -74,6 +73,7 @@ public class QuickTimeTypeChecker implements TypeChecker
         _ftypMap.put("ftypNDXS", FileType.Mp4);
         // hotit add more
         _ftypMap.put("ftypnvr1", FileType.Mp4);
+        _ftypMap.put("ftyp3gp4", FileType.Mp4);
         // hotit
 
         // HEIF
